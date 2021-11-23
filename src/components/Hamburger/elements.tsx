@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Wrapper = styled(({...props}) => <div {...props} />)`
+
+`
+
 export const Container = styled(({...props}) => <div {...props} />)`
     width: 60px;
     height: 45px;

@@ -1,12 +1,12 @@
+import { SearchAndHamburger } from "collections/SearchAndHamburger"
+import { PageWidth } from "~/components"
 import { Container, HeroCta } from "./elements"
 
 export const Hero = () => {
     return <Container>
-        <HeroCta />
-        <div>
-            <div>
-                <img src="/images/charizard.png" alt="" />
-            </div>
-        </div>
+        <PageWidth>
+            <SearchAndHamburger />
+            <HeroCta />
+        </PageWidth>
     </Container>
 }
