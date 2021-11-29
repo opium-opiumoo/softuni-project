@@ -1,12 +1,12 @@
-import { SearchAndHamburger } from "collections/SearchAndHamburger"
-import { PageWidth } from "~/components"
-import { Container, HeroCta } from "./elements"
+import { HeroLeftSide } from "collections/HeroLeftSide";
+import { HeroRightSide } from "collections/HeroRightSide";
+import { StyledHero } from "./elements";
 
 export const Hero = () => {
-    return <Container>
-        <PageWidth>
-            <SearchAndHamburger />
-            <HeroCta />
-        </PageWidth>
-    </Container>
-}
+  return (
+    <StyledHero>
+      <HeroLeftSide />
+      <HeroRightSide />
+    </StyledHero>
+  );
+};

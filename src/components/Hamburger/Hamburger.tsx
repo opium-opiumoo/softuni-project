@@ -1,12 +1,12 @@
-import { Container, Wrapper, Bar } from "./elements"
+import { StyledHamburger } from "./elements";
 
-export const Hamburger = () => {
-    return <Wrapper>
-        <Container>
-            <Bar />
-            <Bar />
-            <Bar />
-            <Bar />
-        </Container>
-    </Wrapper>
-}
+export const Hamburger = ({ ...props }) => {
+  return (
+    <StyledHamburger {...props}>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </StyledHamburger>
+  );
+};

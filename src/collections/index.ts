@@ -1,3 +1,4 @@
-export * from "./HeroCta"
-export * from "./SwiperContainer"
-export * from "./SearchAndHamburger"
+export * from './Header'
+export * from "./HeaderSearch"
+export * from "./HeroLeftSide"
+export * from "./HeroRightSide"

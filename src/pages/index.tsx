@@ -1,12 +1,15 @@
+import { BackgroundColor, PageWidth } from "~/components";
+import { Header } from "~/collections";
 import { NextPage } from "next";
-import { Text } from "~/components";
 import { Hero } from "~/sections";
-
 const HomePage: NextPage = () => {
   return (
-    <>
-    <Hero />
-    </>
+    <BackgroundColor>
+      <PageWidth>
+        <Header />
+        <Hero />
+      </PageWidth>
+    </BackgroundColor>
   );
 };
 

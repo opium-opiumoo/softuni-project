@@ -1,6 +1,5 @@
-import { PageWidth as StyledPageWidth } from "./elements"
+import { StyledPageWidth } from "./elements";
 
-export const PageWidth = ({...props}) => {
-    return <StyledPageWidth {...props}>
-        </StyledPageWidth>
-}
+export const PageWidth = ({ ...props }) => {
+  return <StyledPageWidth {...props} />;
+};
