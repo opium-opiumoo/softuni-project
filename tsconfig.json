@@ -17,7 +17,7 @@
       "~/utils": ["utils"]
     },
     "allowJs": false,
-    "strict": true,
+    "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
