@@ -1,1 +1,1 @@
-export * from "./FireSVG"
+export {};

@@ -1,6 +1,7 @@
 import { NextPage } from "next";
-import { BackgroundColor, PageWidth } from "~/components";
+
 import { Header } from "~/collections";
+import { BackgroundColor, PageWidth } from "~/components";
 
 const PokemonPage: NextPage = () => {
   return (

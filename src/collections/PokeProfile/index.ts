@@ -1,1 +1,1 @@
-export * from "./PokeProfile"
+export * from "./PokeProfile";

@@ -1,1 +1,1 @@
-export * from "./LoginRegisterForms"
+export * from "./LoginRegisterForms";

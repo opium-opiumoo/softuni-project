@@ -1,7 +1,8 @@
-import { useRouter } from "next/router";
-import { BackgroundColor, PageWidth } from "~/components";
-import { Header } from "~/collections";
 import { NextPage } from "next";
+import { useRouter } from "next/router";
+
+import { Header } from "~/collections";
+import { BackgroundColor, PageWidth } from "~/components";
 import { Hero } from "~/sections";
 const HomePage: NextPage = () => {
   const { asPath } = useRouter();

@@ -1,5 +1,6 @@
 import { HeaderSearch } from "~/collections";
 import { Hamburger } from "~/components";
+
 import { HeaderContainer, LogoContainer, LogoImg, StyledHeader } from "./elements";
 
 export const Header = () => {

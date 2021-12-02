@@ -11,9 +11,7 @@ module.exports = {
   },
   plugins: [
     "better-styled-components",
-    "styled-components-a11y",
     "simple-import-sort",
-    "jsx-a11y",
     "import",
     "@typescript-eslint",
     "react",
@@ -21,9 +19,8 @@ module.exports = {
   ],
   extends: [
     "plugin:@typescript-eslint/recommended",
-    "plugin:jsx-a11y/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:styled-components-a11y/recommended",
+    // "plugin:styled-components-a11y/recommended",
     "plugin:react/recommended",
     "plugin:prettier/recommended",
   ],

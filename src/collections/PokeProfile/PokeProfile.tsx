@@ -1,5 +1,6 @@
 import { AllPokeWrapper } from "collections/AccountDetails/elements";
 import { InfoContainer } from "components/InfoContainer";
+
 import {
   PokeProfileContainer,
   PokeProfileContent,

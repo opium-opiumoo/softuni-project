@@ -1,7 +1,7 @@
 import { NextPage } from "next";
+
+import { Header, LoginRegisterForms } from "~/collections";
 import { BackgroundColor, PageWidth } from "~/components";
-import { Header } from "~/collections";
-import { LoginRegisterForms } from "collections/LoginRegisterForms";
 
 const LoginPage: NextPage = () => {
   return (

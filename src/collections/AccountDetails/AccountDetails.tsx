@@ -1,4 +1,5 @@
-import { PokemonWideContainer, PokeCard } from "~/components";
+import { PokeCard, PokemonWideContainer } from "~/components";
+
 import {
   AccountActions,
   AccountButton,

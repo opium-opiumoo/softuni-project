@@ -1,4 +1,5 @@
 import { SearchSVG } from "components/SearchSVG";
+
 import { StyledHeaderSearch } from "./elements";
 
 export const HeaderSearch = ({ ...props }) => {
