@@ -88,3 +88,22 @@ export const RecoverPasswordContainer = styled(({ ...props }) => <div {...props}
 export const Paragraph = styled(({ ...props }) => <p {...props} />)``;
 
 export const FormHolder = styled(({ ...props }) => <div {...props} />)``;
+
+export const CancelButton = styled(({ ...props }) => <button {...props} />)`
+  outline: 0;
+  opacity: 1;
+  text-transform: capitalize;
+  border: 0;
+  background: 0 0;
+  text-decoration: underline;
+`;
+
+export const RegisterForm = styled(({ ...props }) => <form {...props} />)``;
+
+export const FormContainer = styled(({ ...props }) => <div {...props} />)`
+  width: 100%;
+`;
+
+export const FormContainerHalf = styled(({ ...props }) => <div {...props} />)``;
+
+export const ClearDiv = styled(({ ...props }) => <div {...props} />)``;

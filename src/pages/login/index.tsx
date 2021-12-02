@@ -1,18 +1,15 @@
-import { useRouter } from "next/router";
 import { NextPage } from "next";
 import { BackgroundColor, PageWidth } from "~/components";
 import { Header } from "~/collections";
+import { LoginRegisterForms } from "collections/LoginRegisterForms";
 
 const LoginPage: NextPage = () => {
-  const { asPath } = useRouter();
-
-  const currentPath = asPath.substring(1);
-
   return (
     <>
-      <BackgroundColor page={currentPath}>
+      <BackgroundColor>
         <PageWidth>
           <Header />
+          <LoginRegisterForms />
         </PageWidth>
       </BackgroundColor>
     </>
