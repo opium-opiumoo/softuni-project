@@ -1,1 +1,1 @@
-export * from "./PokemonWideContainer"
+export * from "./PokemonWideContainer";

@@ -1,27 +1,26 @@
-import LoginPage from "pages/login";
 import {
   Button,
   ButtonContainer,
+  CancelButton,
+  ClearDiv,
+  FormContainer,
+  FormContainerHalf,
+  FormHolder,
   FormInput,
   Header,
   LoginForm,
   LoginFormContainer,
   LoginSection,
   LoginSectionContent,
-  RecoverPasswordContainer,
-  ResetPassword,
   Paragraph,
-  FormHolder,
-  CancelButton,
+  RecoverPasswordContainer,
   RegisterForm,
-  FormContainer,
-  FormContainerHalf,
-  ClearDiv,
+  ResetPassword,
 } from "./elements";
 
 export const LoginRegisterForms = () => {
   return (
-    <LoginPage>
+    <>
       <LoginSection>
         <Header>{/* header text */}</Header>
         <LoginSectionContent>
@@ -127,6 +126,6 @@ export const LoginRegisterForms = () => {
           </RegisterForm>
         </LoginFormContainer>
       </LoginSection>
-    </LoginPage>
+    </>
   );
 };

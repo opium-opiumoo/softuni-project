@@ -1,8 +1,9 @@
-import { useRouter } from "next/router";
-import { NextPage } from "next";
-import { BackgroundColor, PageWidth } from "~/components";
-import { Header } from "~/collections";
 import { AccountDetails } from "collections/AccountDetails";
+import { NextPage } from "next";
+import { useRouter } from "next/router";
+
+import { Header } from "~/collections";
+import { BackgroundColor, PageWidth } from "~/components";
 
 const AccountPage: NextPage = () => {
   const { asPath } = useRouter();

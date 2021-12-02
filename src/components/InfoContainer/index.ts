@@ -1,1 +1,1 @@
-export * from "./InfoContainer"
+export * from "./InfoContainer";

@@ -1,1 +1,1 @@
-export * from "./SwiperHero"
+export * from "./SwiperHero";

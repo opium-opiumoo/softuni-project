@@ -1,1 +1,1 @@
-export * from "./PageWidth"
+export * from "./PageWidth";
