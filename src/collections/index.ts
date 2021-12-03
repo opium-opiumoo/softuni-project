@@ -4,3 +4,4 @@ export * from "./HeaderSearch";
 export * from "./HeroLeftSide";
 export * from "./HeroRightSide";
 export * from "./LoginRegisterForms"
+export * from "./CatalogSearch"

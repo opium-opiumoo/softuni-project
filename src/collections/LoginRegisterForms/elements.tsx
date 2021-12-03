@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const LoginPage = styled(({ ...props }) => <div {...props} />)`
+export const LoginPageContainer = styled(({ ...props }) => <div {...props} />)`
   display: flex;
   flex-direction: row;
   justify-content: space-around;

@@ -16,11 +16,12 @@ import {
   RecoverPasswordContainer,
   RegisterForm,
   ResetPassword,
+  LoginPageContainer,
 } from "./elements";
 
 export const LoginRegisterForms = () => {
   return (
-    <>
+    <LoginPageContainer>
       <LoginSection>
         <Header>{/* header text */}</Header>
         <LoginSectionContent>
@@ -126,6 +127,6 @@ export const LoginRegisterForms = () => {
           </RegisterForm>
         </LoginFormContainer>
       </LoginSection>
-    </>
+    </LoginPageContainer>
   );
 };
