@@ -15,10 +15,34 @@ import {
   UpperFilterContainer,
 } from "./elements";
 
+import { useContext, useEffect } from "react";
+
+import { PokeSearchContext } from "context/PokeSearchContext";
+import { PokeCard } from "components/PokemonCard";
+import { PokemonClient } from "pokenode-ts";
+
 export const CatalogSearch = () => {
+  const { pokemons } = useContext(PokeSearchContext);
+
+  // const SearchChangeHandler = (e) => {
+  //   console.log(e.target.value);
+
+  //   useEffect(() => {
+  //     const getPokemon = async () => {
+  //       const api = new PokemonClient();
+
+  //       const result = await api
+  //         .getPokemonByName(e.target.value)
+  //         .then((response) => console.log(response.data));
+  //     };
+
+  //     getPokemon();
+  //   }, []);
+  // };
+
   return (
     <CatalogContainer>
-      <SearchBarCatalog />
+      <SearchBarCatalog placeholder="Search your Pokemon!" />
       <UpperFilterContainer>
         <SortSelectBox>
           <SortSelectBoxSelect name="sort">
@@ -50,35 +74,44 @@ export const CatalogSearch = () => {
           </SingleFilterSelect>
         </SingleFilterContainer>
         <SingleFilterContainer>
-          <SingleFilterSelect name="type">
+          <SingleFilterSelect name="weaknessess">
             <Option value="" disabled selected>
-              Type
+              Weaknesses
             </Option>
           </SingleFilterSelect>
         </SingleFilterContainer>
         <SingleFilterContainer>
-          <SingleFilterSelect name="type">
+          <SingleFilterSelect name="abilities">
             <Option value="" disabled selected>
-              Type
+              Abilities
             </Option>
           </SingleFilterSelect>
         </SingleFilterContainer>
         <SingleFilterContainer>
-          <SingleFilterSelect name="type">
+          <SingleFilterSelect name="height">
             <Option value="" disabled selected>
-              Type
+              Height
             </Option>
           </SingleFilterSelect>
         </SingleFilterContainer>
         <SingleFilterContainer>
-          <SingleFilterSelect name="type">
+          <SingleFilterSelect name="weight">
             <Option value="" disabled selected>
-              Type
+              Weight
             </Option>
           </SingleFilterSelect>
         </SingleFilterContainer>
       </FilterContainer>
-      <PokeCatalogContainer></PokeCatalogContainer>
+      <PokeCatalogContainer>
+        {pokemons.map((x) => (
+          <PokeCard
+            PokeImgSrc={x.sprites.front_shiny}
+            PokeId={x.id}
+            PokeName={x.name}
+            PokeType={x.name}
+          ></PokeCard>
+        ))}
+      </PokeCatalogContainer>
     </CatalogContainer>
   );
 };

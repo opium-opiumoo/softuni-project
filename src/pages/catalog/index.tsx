@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 
 import { Header, CatalogSearch } from "~/collections";
 import { BackgroundColor, PageWidth } from "~/components";
+import { PokeSearchProvider } from "~/context";
 
 const CatalogPage: NextPage = () => {
   const { asPath } = useRouter();
@@ -13,8 +14,10 @@ const CatalogPage: NextPage = () => {
     <>
       <BackgroundColor page={currentPath}>
         <PageWidth>
-          <Header />
-          <CatalogSearch />
+          <PokeSearchProvider>
+            <Header />
+            <CatalogSearch />
+          </PokeSearchProvider>
         </PageWidth>
       </BackgroundColor>
     </>

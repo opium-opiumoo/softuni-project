@@ -14,9 +14,10 @@ export const Wrapper = styled(({ ...props }) => <div {...props} />)`
 `;
 
 export const PokeCardImg = styled(({ ...props }) => <img {...props} />)`
-  margin-top: -90px;
+  margin-top: -110px;
   margin-bottom: 60px;
-  max-width: 80px;
+  max-width: 150px;
+  width: 150px;
 `;
 
 export const PokeCardTextWrap = styled(({ ...props }) => <div {...props} />)`
